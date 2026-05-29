@@ -1,3 +1,7 @@
+![Node.js](https://img.shields.io/badge/Node.js-Runtime-green)
+![Express](https://img.shields.io/badge/Express-Framework-black)
+![Sequelize](https://img.shields.io/badge/Sequelize-ORM-blue)
+![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey)
 # GitHub Account API
 
 > Status: Em desenvolvimento ⚠️

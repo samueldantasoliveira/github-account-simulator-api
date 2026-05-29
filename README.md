@@ -1,53 +1,122 @@
-# API-EXAMPLE
+# GitHub Account API
 
-> Status: Developing ⚠️
-## Description:
-It is a Simple API with JavaScript, NodeJS, Sequelize and Express, where I did a CRUD of a Github account a CRUD of Followers between this accounts, CRUD of Repositories and Stars
+> Status: Em desenvolvimento ⚠️
 
-## The Account Model fields:
+## 📖 Sobre o projeto
 
-+ id
-+ nome
-+ email
-+ local
-+ avatar
-+ username
-+ bio
+API REST desenvolvida com Node.js, Express, Sequelize e SQLite para prática de conceitos de desenvolvimento back-end, como operações CRUD, rotas REST, persistência de dados e relacionamento entre entidades.
 
-## The Follower model fields:
+O projeto simula algumas funcionalidades básicas do GitHub, incluindo contas, repositórios, seguidores e estrelas.
 
-+ id
-+ follower_username
-+ followed_username
+---
 
-## The Token model fields:(This model keeps a log of logins)
+## 🚀 Tecnologias
 
-+ id
-+ data
-+ user_id
+* Node.js
+* Express
+* Sequelize
+* SQLite
+* JavaScript
 
-## The Repository model fields:
-+ id
-+ nome
-+ description
-+ public
-+ user_id
+---
 
-## The Stars model fields:
-+ id
-+ user_id
-+ repository_id
+## 📌 Funcionalidades
 
-## In addition to CRUD, I implement other features such as:
-+ Login -> The Request send a username and the API search that on the Database and return the Account creating a log 
+### Accounts
 
-## This features are in developing:
+* Criar contas
+* Atualizar informações de contas
+* Remover contas
+* Listar contas
 
+### Followers
 
-## How to run the application:
-1) Run Shell: npm/yarn install
-2) Run Shell: node app.js
-3) Make a request to http://localhost:3000/ 👉 [See the Routes here](https://github.com/samueldantasoliveira/API-EXAMPLE/blob/main/ROTAS.md)
+* Seguir/deixar de seguir contas
+* Listar seguidores
 
-## Or make a request to the API:
-https://showy-magic-vanilla.glitch.me/ 👉 [See the Routes here](https://github.com/samueldantasoliveira/API-EXAMPLE/blob/main/ROTAS.md)
+### Repositories
+
+* Criar repositórios
+* Atualizar repositórios
+* Remover repositórios
+* Listar repositórios
+
+### Stars
+
+* Adicionar estrelas em repositórios
+* Remover estrelas
+
+### Login e Tokens
+
+* Simulação de login
+* Criação de registro de login através de Token
+
+---
+
+## 🗂 Modelos da aplicação
+
+### Account
+
+* id
+* nome
+* email
+* local
+* avatar
+* username
+* bio
+
+### Follower
+
+* id
+* follower_username
+* followed_username
+
+### Repository
+
+* id
+* nome
+* description
+* public
+* user_id
+
+### Star
+
+* id
+* user_id
+* repository_id
+
+### Token
+
+* id
+* data
+* user_id
+
+---
+
+## ▶️ Como executar o projeto
+
+### Instalar dependências
+
+```bash
+npm install
+```
+
+### Executar a aplicação
+
+```bash
+node app.js
+```
+
+A API será executada em:
+
+```bash
+http://localhost:3000/
+```
+
+---
+
+## 📚 Rotas
+
+👉 Veja todas as rotas aqui:
+
+[ROTAS.md](https://github.com/samueldantasoliveira/API-EXAMPLE/blob/main/ROTAS.md)
